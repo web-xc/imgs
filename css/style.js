@@ -29,7 +29,8 @@ function percent() {
 	result <= 99 || (result = 99), (btn.innerHTML = result);
 }
 
-document.getElementById("page-name").innerText = document.title.split(" | XC's Blog")[0];
+document.getElementById("page-name").innerText = document.title.split()[0];
+// " | XC's Blog"
 window.onscroll = percent; // 执行函数
 // 页面百分比
 function percent() {
